@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:background="#F5F5F6"
@@ -8,35 +9,34 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/app_title"
+        android:id="@+id/logo_title"
         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
+        android:layout_height="wrap_content"
         android:text="RESTAURANT APP"
         android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/username_input"
+        app:layout_constraintBottom_toTopOf="@+id/email_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <TextView
-        android:id="@+id/username_label"
+        android:id="@+id/email_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-         android:text="Email"
-         android:textColor="@color/black"
+        android:layout_marginBottom="6dp"
+        android:text="Email"
+        android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/username_input"
+        app:layout_constraintBottom_toTopOf="@+id/email_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- Email Input Box -->
     <EditText
-         android:id="@+id/username_input"
+        android:id="@+id/email_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -56,17 +56,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-         android:text="Password"
+        android:text="Password"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username_input" />
+        app:layout_constraintTop_toBottomOf="@+id/email_input" />
 
     <EditText
         android:id="@+id/Password_input"
         android:layout_width="0dp"
-         android:layout_height="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="32dp"
@@ -78,7 +78,7 @@
         android:paddingEnd="48dp"
         android:paddingBottom="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Password_label" />
 
     <Button
@@ -90,7 +90,7 @@
         android:gravity="center"
         android:padding="1dp"
         android:text="*"
-         android:textColor="@android:color/black"
+        android:textColor="@android:color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/Password_input"
         app:layout_constraintEnd_toEndOf="@+id/Password_input"
@@ -99,7 +99,7 @@
     <Button
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:paddingStart="48dp"
         android:paddingEnd="48dp"
@@ -116,7 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:paddingStart="40dp"
-         android:paddingEnd="40dp"
+        android:paddingEnd="40dp"
         android:text="Register"
         android:textSize="18sp"
         app:backgroundTint="#42A5F5"
@@ -125,14 +125,14 @@
         app:layout_constraintTop_toBottomOf="@+id/login_button" />
 
     <Button
-        android:id="@+id/help_user_button"
+        android:id="@+id/support_button"
         android:layout_width="0dp"
-         android:layout_height="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:text="Having trouble logging in?"
-        android:textAllCaps="false"
+        android:textAllCaps="true"
         android:textSize="16sp"
         app:backgroundTint="#90CAF9"
         app:layout_constraintEnd_toEndOf="parent"
