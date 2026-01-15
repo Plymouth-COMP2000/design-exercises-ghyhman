@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F6"
-    tools:context=".GuestSettings">
+    tools:context=".StaffSettings">
 
     <ImageView
         android:id="@+id/back_arrow"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:contentDescription="Back"
+        android:contentDescription="@string/back_content_description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_arrow" />
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="Settings"
+        android:text="@string/settings"
         android:textColor="@android:color/black"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -35,9 +35,9 @@
         android:id="@+id/notifications_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:text="Notification Settings"
+        android:text="@string/notification_settings_title"
         android:textColor="@android:color/black"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,14 +49,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:text="Receive notifications when your booking is amended or cancelled?"
+        android:text="@string/staff_notify_new_booking"
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@+id/notifications_title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/cancel_notify_switch1" />
+        app:layout_constraintEnd_toStartOf="@+id/cancel_notify_switch2" />
 
     <Switch
-        android:id="@+id/cancel_notify_switch1"
+        android:id="@+id/cancel_notify_switch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -71,14 +71,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="48dp"
-        android:text="Receive notifications when you cancel a reservation?"
+        android:text="@string/staff_notify_amend_cancel"
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@+id/cancel_notify_label"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/notification_status_switch1" />
+        app:layout_constraintEnd_toStartOf="@+id/notification_status_switch2" />
 
     <Switch
-        android:id="@+id/notification_status_switch1"
+        android:id="@+id/notification_status_switch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="28dp"

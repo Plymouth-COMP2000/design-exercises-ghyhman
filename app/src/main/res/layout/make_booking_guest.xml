@@ -7,12 +7,23 @@
     android:background="#F5F5F6"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/back_content_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow" />
+
     <TextView
         android:id="@+id/title_reservation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Make a reservation here!"
+        android:text="@string/reservation_title"
         android:textColor="@android:color/black"
          android:textSize="34sp"
         android:textStyle="bold"
@@ -25,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="Please select a date and time"
+        android:text="@string/select_date_time_label"
         android:textColor="@android:color/black"
         android:textSize="18sp"
          app:layout_constraintStart_toStartOf="@+id/date_input"
@@ -36,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Date"
+        android:text="@string/date_label"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/date_input"
@@ -62,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Time"
+        android:text="@string/time_label"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/time_input"
@@ -88,28 +99,16 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="136dp"
         android:layout_marginEnd="32dp"
-         android:paddingTop="16dp"
+        android:paddingTop="16dp"
         android:paddingBottom="16dp"
-        android:text="Confirm Reservation?"
+        android:text="@string/confirm_reservation"
         android:textSize="22sp"
         app:backgroundTint="#42A5F5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/time_input" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/low_nav"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:background="?android:attr/windowBackground"
-        app:itemHorizontalTranslationEnabled="false"
-        app:labelVisibilityMode="labeled"
-         app:itemActiveIndicatorStyle="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/nav_bar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
